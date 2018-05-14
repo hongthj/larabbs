@@ -55,9 +55,9 @@ trait ActiveUserHelper
 
         // 只获取我们想要的数量
         $users = array_slice($users, 0, $this->user_number, true);
-
+        $active_users
         // 新建一个空集合
-        $active_users = collect();
+         = collect();
 
         foreach ($users as $user_id => $user) {
             // 找寻下是否可以找到用户
